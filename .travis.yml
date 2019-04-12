@@ -6,4 +6,4 @@ before_install:
  - docker build -t shesh-fea .
 
 script:
- - dcoker run shesh-fea npm run test -- --coverage
+ - docker run shesh-fea npm run test -- --coverage
