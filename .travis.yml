@@ -1,0 +1,9 @@
+sudo: required
+services:
+ - docker
+
+before_install:
+ - docker build -t shesh-fea .
+
+script:
+ - dcoker run shesh-fea npm run test -- --coverage
